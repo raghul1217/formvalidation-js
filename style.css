@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&family=Montserrat:wght@100&family=Oswald:wght@500&family=Poppins:wght@300;400;600;800&family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(33,169,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    background-color: white;
+    padding: 50px 30px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.7);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+#form_icon{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    color: rgb(33,169,255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.input_group{
+    display: flex;
+    width: 100%;
+    margin: 17px 0px;
+    position: relative;
+}
+
+.input_group label{
+    flex-basis: 28%;
+    color: rgba(0,0,0,0.8);
+    font-size: 16px;
+}
+
+.input_group input,textarea{
+    flex-basis: 67%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+}
+
+::placeholder{
+    color: rgba(0,0,0,0.3);
+    font-size: 15px;
+}
+
+form #form_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-direction: column;
+    width: 100%;
+}
+
+form #form_btn button{
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(33,169,255);
+    color: white;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+.input_group span{
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+    font-size: 12px;
+    color: red;
+}
+
+.input_group span i{
+    color: seagreen;
+}
+
+#form_btn span{
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#name_error i{
+    color: seagreen;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container form{
+        width: 350px;
+        padding: 30px 15px 8px;
+    }
+
+    #form_icon{
+        width: 30px;
+        height: 30px;
+        font-size: 23px;
+        padding: 23px;
+    }
+
+    .input_group label{
+        font-size: 12px;
+    }
+    
+    ::placeholder{
+        font-size: 12px;
+    }
+
+    form #form_btn button{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .input_group span{
+        font-size: 10px;
+        right: 15px;
+        bottom: 4px;
+    }
+
+    .input_group input{
+        font-size: 12px;
+    }
+}
